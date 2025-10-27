@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>LGBT Libre - Por una sociedad más justa e inclusiva</title>
+    <meta
+      name="description"
+      content="Trabajamos para conseguir la plena inclusión de la diversidad sexual y de género en la sociedad chilena."
+    />
+    <link rel="stylesheet" href="/dist/styles.css" />
+  </head>
+  <body class="font-sans">
+    <!-- Header -->
+    <header
+      class="fixed inset-x-0 top-0 z-50 border-b border-neutral-200 bg-white/80 backdrop-blur-md dark:border-neutral-800 dark:bg-neutral-900/80"
+    >
+      <div class="container-wide flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <span
+            class="inline-flex h-9 w-9 items-center justify-center rounded-md bg-brand-600 text-white"
+            aria-hidden="true"
+            >=</span
+          >
+          <span class="text-base font-bold tracking-tight">LGBT Libre</span>
+        </a>
+
+        <nav
+          class="hidden items-center gap-6 text-sm font-medium sm:flex md:gap-8"
+          aria-label="Navegación principal"
+        >
+          <a class="hover:text-brand-700 dark:hover:text-brand-300" href="#mision"
+            >¿Qué hacemos?</a
+          >
+          <a
+            class="hover:text-brand-700 dark:hover:text-brand-300"
+            href="#campanas"
+            >Incidencia</a
+          >
+          <a class="hover:text-brand-700 dark:hover:text-brand-300" href="#apoyo-legal"
+            >Apoyo Legal</a
+          >
+          <a class="hover:text-brand-700 dark:hover:text-brand-300" href="#noticias"
+            >Noticias</a
+          >
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <button
+            id="toggle-dark"
+            class="btn-ghost rounded-full p-2"
+            aria-label="Cambiar tema"
+          >
+            <svg
+              class="h-5 w-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+              />
+            </svg>
+          </button>
+          <a href="#donar" class="btn-accent hidden sm:inline-flex">Apóyanos</a>
+          <button
+            class="btn-ghost inline-flex items-center gap-2 sm:hidden"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            id="menu-btn"
+          >
+            <span>Menú</span>
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú móvil -->
+      <div
+        id="mobile-menu"
+        class="container-wide hidden border-t border-neutral-200 bg-white py-3 dark:border-neutral-800 dark:bg-neutral-900 sm:hidden"
+      >
+        <div class="grid gap-2 text-sm">
+          <a class="rounded px-2 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="#mision">¿Qué hacemos?</a>
+          <a class="rounded px-2 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="#campanas">Incidencia</a>
+          <a class="rounded px-2 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="#apoyo-legal">Apoyo Legal</a>
+          <a class="rounded px-2 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="#noticias">Noticias</a>
+          <a class="btn-accent mt-2" href="#donar">Apóyanos</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-16">
+      <!-- Hero -->
+      <section class="section bg-neutral-50 dark:bg-neutral-950">
+        <div class="container-wide grid items-center gap-10 lg:grid-cols-2">
+          <div class="space-y-6">
+            <span class="chip">Diversidad Sexual y de Género</span>
+            <h1 class="heading-hero">
+              Por una sociedad más justa e inclusiva
+            </h1>
+            <p class="lead max-w-prose">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="#mision" class="btn-primary">¿Qué hacemos?</a>
+              <a href="#apoyo-legal" class="btn-ghost">Apoyo Legal</a>
+            </div>
+          </div>
+          <div
+            class="relative aspect-[4/3] overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-200 dark:border-neutral-800 dark:bg-neutral-800"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1513569771920-c9e1d31714af?q=80&w=1200&auto=format&fit=crop"
+              alt="Personas reunidas en campaña"
+              class="h-full w-full object-cover"
+            />
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-tr from-brand-600/20 to-transparent"
+              aria-hidden="true"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ¿Qué hacemos? -->
+      <section id="mision" class="section">
+        <div class="container-narrow space-y-6 text-center">
+          <h2 class="heading-2">¿Qué hacemos?</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          </p>
+          <div class="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="card">
+              <h3 class="mb-2 font-semibold">Cambio Cultural</h3>
+              <p class="text-sm text-neutral-600 dark:text-neutral-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="mb-2 font-semibold">No más discriminación</h3>
+              <p class="text-sm text-neutral-600 dark:text-neutral-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="mb-2 font-semibold">Apoyo Legal</h3>
+              <p class="text-sm text-neutral-600 dark:text-neutral-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Incidencia -->
+      <section id="campanas" class="section bg-neutral-50 dark:bg-neutral-950">
+        <div class="container-wide">
+          <div class="mb-8 text-center">
+            <h2 class="heading-2">Áreas de incidencia</h2>
+            <p class="lead mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</p>
+          </div>
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="card overflow-hidden p-0">
+              <div class="aspect-[16/9] overflow-hidden bg-gradient-to-br from-brand-500 to-brand-700">
+                <div class="flex h-full items-center justify-center">
+                  <svg class="h-16 w-16 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+              </div>
+              <div class="space-y-3 p-5">
+                <span class="chip">Educación</span>
+                <h3 class="font-semibold">Educación Inclusiva</h3>
+                <p class="text-sm text-neutral-600 dark:text-neutral-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                </p>
+              </div>
+            </article>
+
+            <article class="card overflow-hidden p-0">
+              <div class="aspect-[16/9] overflow-hidden bg-gradient-to-br from-brand-600 to-brand-800">
+                <div class="flex h-full items-center justify-center">
+                  <svg class="h-16 w-16 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                  </svg>
+                </div>
+              </div>
+              <div class="space-y-3 p-5">
+                <span class="chip">Legislación</span>
+                <h3 class="font-semibold">Políticas Públicas</h3>
+                <p class="text-sm text-neutral-600 dark:text-neutral-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                </p>
+              </div>
+            </article>
+
+            <article class="card overflow-hidden p-0">
+              <div class="aspect-[16/9] overflow-hidden bg-gradient-to-br from-brand-500 to-brand-600">
+                <div class="flex h-full items-center justify-center">
+                  <svg class="h-16 w-16 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="space-y-3 p-5">
+                <span class="chip">Investigación</span>
+                <h3 class="font-semibold">Investigación y Reflexión</h3>
+                <p class="text-sm text-neutral-600 dark:text-neutral-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Apoyo Legal -->
+      <section id="apoyo-legal" class="section">
+        <div class="container-wide">
+          <div class="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <span class="chip">Asesoría gratuita</span>
+              <h2 class="heading-2 mt-4">Acompañamiento gratuito ante casos de discriminación</h2>
+              <p class="lead mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="mt-4 text-neutral-600 dark:text-neutral-300">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="mt-6">
+                <a href="#" class="btn-primary">Solicitar apoyo legal</a>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="mb-4 font-semibold">¿Cómo podemos ayudarte?</h3>
+              <ul class="space-y-3 text-sm">
+                <li class="flex gap-3">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-neutral-600 dark:text-neutral-300">Lorem ipsum dolor sit amet consectetur adipiscing</span>
+                </li>
+                <li class="flex gap-3">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-neutral-600 dark:text-neutral-300">Sed do eiusmod tempor incididunt ut labore</span>
+                </li>
+                <li class="flex gap-3">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-neutral-600 dark:text-neutral-300">Ut enim ad minim veniam quis nostrud</span>
+                </li>
+                <li class="flex gap-3">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-neutral-600 dark:text-neutral-300">Exercitation ullamco laboris nisi</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Donar -->
+      <section id="donar" class="section bg-neutral-50 dark:bg-neutral-950">
+        <div
+          class="container-wide overflow-hidden rounded-2xl bg-gradient-to-r from-brand-600 to-brand-700 p-8 text-white shadow-soft md:p-12"
+        >
+          <div class="grid items-center gap-6 md:grid-cols-3">
+            <div class="md:col-span-2">
+              <h3 class="text-2xl font-bold">Apoya nuestro trabajo</h3>
+              <p class="mt-2 text-white/90">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+              </p>
+            </div>
+            <!-- <div class="flex gap-3 md:justify-end">
+              <a class="btn bg-white text-brand-800 hover:bg-neutral-100" href="https://colectaiguales.donando.cl/" target="_blank"
+                >Donar ahora</a
+              >
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Noticias -->
+      <section id="noticias" class="section">
+        <div class="container-wide">
+          <div class="mb-8 flex items-end justify-between">
+            <div>
+              <h2 class="heading-2">Noticias</h2>
+              <p class="lead mt-2">Lorem ipsum dolor sit amet</p>
+            </div>
+            <a href="https://iguales.cl/noticias/" class="text-sm font-medium text-brand-700 hover:underline dark:text-brand-300"
+              >Ver todas →</a
+            >
+          </div>
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="card">
+              <div class="mb-3 flex items-center gap-3 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2025-10-24">24 octubre, 2025</time>
+              </div>
+              <h3 class="mb-2 font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipiscing
+              </h3>
+              <p class="text-sm text-neutral-600 dark:text-neutral-300">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud...
+              </p>
+              <a class="mt-3 inline-flex items-center text-sm font-medium text-brand-700 hover:underline dark:text-brand-300" href="#"
+                >Leer más →</a
+              >
+            </article>
+
+            <article class="card">
+              <div class="mb-3 flex items-center gap-3 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2025-10-09">9 octubre, 2025</time>
+              </div>
+              <h3 class="mb-2 font-semibold">
+                Consectetur adipiscing elit sed eiusmod tempor
+              </h3>
+              <p class="text-sm text-neutral-600 dark:text-neutral-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore...
+              </p>
+              <a class="mt-3 inline-flex items-center text-sm font-medium text-brand-700 hover:underline dark:text-brand-300" href="#"
+                >Leer más →</a
+              >
+            </article>
+
+            <article class="card">
+              <div class="mb-3 flex items-center gap-3 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2025-08-25">25 agosto, 2025</time>
+              </div>
+              <h3 class="mb-2 font-semibold">
+                Ut enim ad minim veniam quis nostrud exercitation
+              </h3>
+              <p class="text-sm text-neutral-600 dark:text-neutral-300">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+              </p>
+              <a class="mt-3 inline-flex items-center text-sm font-medium text-brand-700 hover:underline dark:text-brand-300" href="#"
+                >Leer más →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="section bg-neutral-50 dark:bg-neutral-950">
+        <div class="container-narrow text-center">
+          <h2 class="heading-2">Suscríbete a nuestro boletín</h2>
+          <p class="lead mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.
+          </p>
+          <form class="mx-auto mt-6 max-w-md">
+            <div class="space-y-3">
+              <input
+                type="text"
+                class="w-full rounded-md border-neutral-300 shadow-sm focus:border-brand-500 focus:ring-brand-500 dark:border-neutral-700 dark:bg-neutral-900"
+                placeholder="Nombre *"
+                required
+              />
+              <input
+                type="text"
+                class="w-full rounded-md border-neutral-300 shadow-sm focus:border-brand-500 focus:ring-brand-500 dark:border-neutral-700 dark:bg-neutral-900"
+                placeholder="Apellido *"
+                required
+              />
+              <input
+                type="email"
+                class="w-full rounded-md border-neutral-300 shadow-sm focus:border-brand-500 focus:ring-brand-500 dark:border-neutral-700 dark:bg-neutral-900"
+                placeholder="Correo electrónico *"
+                required
+              />
+              <button type="submit" class="btn-primary w-full">Suscribirme</button>
+            </div>
+            <p class="mt-3 text-xs text-neutral-500">
+              * Campos requeridos. Al suscribirte aceptas nuestras políticas de privacidad.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-200 dark:border-neutral-800">
+      <div class="container-wide section grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex h-9 w-9 items-center justify-center rounded-md bg-brand-600 text-white"
+              aria-hidden="true"
+              >=</span
+            >
+            <span class="text-base font-bold tracking-tight">LGBT Libre</span>
+          </div>
+          <p class="text-sm text-neutral-600 dark:text-neutral-300">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="mb-3 text-sm font-semibold">Conócenos</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:underline" href="#mision">¿Qué hacemos?</a></li>
+            <li><a class="hover:underline" href="#campanas">Incidencia</a></li>
+            <li><a class="hover:underline" href="#apoyo-legal">Apoyo Legal</a></li>
+            <li><a class="hover:underline" href="https://iguales.cl/transparencia/">Transparencia</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="mb-3 text-sm font-semibold">Recursos</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:underline" href="https://iguales.cl/inclusion-laboral/">Inclusión Laboral</a></li>
+            <li><a class="hover:underline" href="https://iguales.cl/capacitate/">Capacítate</a></li>
+            <li><a class="hover:underline" href="#noticias">Noticias</a></li>
+            <li><a class="hover:underline" href="https://iguales.cl/repositorio/">Repositorio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="mb-3 text-sm font-semibold">Contacto</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:underline" href="mailto:contacto@iguales.cl">contacto@iguales.cl</a></li>
+            <li><a class="hover:underline" href="mailto:comunicaciones@iguales.cl">Prensa: comunicaciones@iguales.cl</a></li>
+            <li><a class="hover:underline" href="https://iguales.cl/contacto/">Formulario de contacto</a></li>
+            <li><a class="hover:underline" href="https://iguales.cl/socios/">Hazte Soci@</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-neutral-200 py-6 text-center text-xs text-neutral-500 dark:border-neutral-800">
+        <div class="container-wide">
+          <p>© 2025 LGBT Libre. Todos los derechos reservados. | Trabajando por la igualdad</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Toggle dark mode
+      const btn = document.getElementById('toggle-dark');
+      const root = document.documentElement;
+      btn?.addEventListener('click', () => {
+        root.classList.toggle('dark');
+        localStorage.setItem(
+          'theme',
+          root.classList.contains('dark') ? 'dark' : 'light'
+        );
+      });
+      (function () {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark') root.classList.add('dark');
+        if (saved === 'light') root.classList.remove('dark');
+      })();
+
+      // Menú móvil
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuBtn?.addEventListener('click', () => {
+        const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', (!expanded).toString());
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

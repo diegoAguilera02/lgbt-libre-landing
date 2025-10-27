@@ -1,0 +1,21 @@
+{
+  "name": "lgbt-libre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css",
+    "build-prod": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "dev": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
+  }
+}
